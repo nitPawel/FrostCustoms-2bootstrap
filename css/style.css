@@ -1,0 +1,251 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+	font-size: 1.6rem;
+}
+
+.hero-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: -1;
+}
+.top-hero {
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	z-index: 0;
+}
+.top-hero-text {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	justify-content: center;
+	font-size: 3.6rem;
+	text-transform: uppercase;
+}
+
+/* nawigacja */
+
+nav {
+	font-size: 2rem;
+	text-transform: uppercase;
+	/* backdrop-filter: blur(8px); */
+	/* filter: blur(1px); */
+}
+.navbar-toggler {
+	font-size: 3rem;
+	border: none;
+}
+.navbar-brand {
+	font-size: 2.4rem;
+	font-weight: bold;
+	text-transform: none;
+}
+
+/* header */
+
+header {
+	font-size: 2rem;
+}
+.carousel-item {
+	position: relative;
+	height: 400px;
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
+}
+
+.carousel-img-one {
+	background-image: url("../img/main-carousel-1.jpg");
+}
+.carousel-img-two {
+	background-image: url("../img/main-carousel-2.jpg");
+}
+.carousel-img-three {
+	background-image: url("../img/main-carousel-3.jpg");
+}
+
+/* home */
+
+.home-boxes {
+	padding: 5rem 0rem;
+}
+
+.home-box i {
+	font-size: 4rem;
+}
+
+.home-box h3 {
+	font-size: 2.6rem;
+}
+
+/* ---------- */
+
+.home-passion {
+	position: relative;
+	height: 350px;
+	background-image: url("../img/sunset640.jpg");
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
+}
+
+.three-img {
+	background-image: url("../img/car1280.png");
+}
+
+.three h3 {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.aboutus-hero {
+	background-image: url("../img/about/highway1280.jpg");
+	background-position: bottom;
+}
+
+.aboutus-info {
+	background-color: rgb(248, 248, 248);
+}
+.aboutus-info .container {
+	padding: 2em 0.5em;
+}
+.aboutus-text {
+	padding: 1.8em;
+}
+.aboutus-text h3 {
+	margin-bottom: 0.5em;
+	font-size: 2.6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: underline #007bff;
+}
+.aboutus-text-right {
+	text-align: right;
+}
+.aboutus-img {
+	height: 300px;
+	object-fit: cover;
+}
+
+/* services ------------ */
+
+.services-hero {
+	background-image: url("../img/services/services.jpg");
+	background-position: 0% 75%;
+}
+/* .services-second img {
+	height: 300px;
+	width: 500px;
+} */
+
+.service-hero-box {
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	z-index: 0;
+}
+.service-hero-box p {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: white;
+}
+.service-hero-box.box-one {
+	background-image: url("../img/services/engine.jpg");
+}
+.service-hero-box.box-two {
+	background-image: url("../img/services/visual.jpg");
+}
+.service-hero-box.box-three {
+	background-image: url("../img/services/caraudio.jpg");
+}
+.service-hero-box.box-four {
+	background-image: url("../img/services/allinone.jpg");
+}
+
+/* ------- projects */
+
+.projects-hero {
+	background-image: url("../img/projects/car-hero.jpg");
+	background-position: 0 70%;
+	/* background-size: 90%; */
+}
+
+.projects img {
+	height: 240px;
+	object-fit: cover;
+}
+.projects .btn {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+}
+
+/*  kontakt ------------ */
+
+.contacts-hero {
+	background-image: url("../img/contact/contact.jpg");
+	/* object-fit: cover; */
+	background-position: 0 30%;
+}
+
+.contacts input,
+.contacts select,
+.contacts textarea {
+	font-size: 1.6rem;
+}
+
+@media (min-width: 992px) {
+	.aboutus-info .container {
+		padding: 0;
+	}
+	.aboutus-shadow {
+		box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+	}
+	.aboutus-text {
+		padding: 5em 0;
+		transform: skew(-15deg);
+	}
+	.aboutus-text-left {
+		padding-right: 2em;
+		text-align: right;
+	}
+	.aboutus-text-right {
+		padding-left: 2em;
+		text-align: left;
+	}
+	.aboutus-img {
+		transform: skew(-15deg);
+		height: auto;
+	}
+}
+
+@media (min-width: 1300px) {
+	.carousel-item {
+		height: 600px;
+	}
+	.carousel-img-one {
+		background-image: url("../img/main-carousel-1-hq.jpg");
+	}
+	.carousel-img-two {
+		background-image: url("../img/main-carousel-2-hq.jpg");
+	}
+	.carousel-img-three {
+		background-image: url("../img/main-carousel-3-hq.jpg");
+	}
+}
